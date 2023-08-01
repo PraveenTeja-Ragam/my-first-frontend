@@ -1,0 +1,54 @@
+<app-header></app-header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Registration</h2>
+  <div class="form-group">
+    <label for="name">Student Name:</label>
+    <input type="text" class="form-control" id="StudentName"  [(ngModel)]="mystudent.name" placeholder="Enter Name" name="name">
+  </div>
+  <div class="form-group">
+    <label for="address">Address:</label>
+    <input type="text" class="form-control" id="address" [(ngModel)]="mystudent.address" placeholder="Enter address" name="address">
+  </div>
+  <div class="form-group">
+    <label for="email">Phone Number:</label>
+    <input type="text" class="form-control" id="phoneNo" [(ngModel)]="mystudent.phoneNo" placeholder="Enter Phone Number" name="phoneNo">
+  </div>
+  <div class="form-group">
+    <label for="pincode">Pincode:</label>
+    <input type="text" class="form-control" id="pincode" [(ngModel)]="mystudent.pincode" placeholder="Enter pincode" name="pincode">
+  </div>
+  <div class="form-group">
+    <label for="course">Course:</label>
+    <input type="course" class="form-control" id="course" [(ngModel)]="mystudent.course" placeholder="Enter course" name="course">
+  </div>
+  <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" [(ngModel)]="mystudent.emailId" placeholder="Enter email" name="email">
+    </div>
+    
+    <button type="submit" (click)="stuSubmit()" class="btn btn-default">Submit</button>
+
+</div>
+
+</body>
+</html>
+<!-- 
+
+name:string="";
+    address:string="";
+    phoneNo:string="";
+    pincode:string="";
+    course:string="";
+    emailId:string=""; -->
